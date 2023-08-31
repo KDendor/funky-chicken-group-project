@@ -18,6 +18,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&
   family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- Unicons CSS -->
+  <link
+  rel="stylesheet"
+  href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+/>
   
 </head>
 <body>
@@ -25,12 +30,27 @@
   <a href="index.html" class="logo">Sprout Sage</a>
     <ul class="navlist">
       <li><a href="plant.html">Identify</a></li>
-      <li><a href="plan.html">Plan</a></li>
       <li><a href="track.html">Track</a></li>
       <li><a href="reminder.html">Reminder</a></li>
       <li><a href="aboutus.html">About Us</a></li>
     </ul>
   <div class="bx bx-menu" id="menu-icon"></div>
 </header>
+<div class="container">
+  <div class="input-field">
+    <textarea placeholder="Enter your new todo"></textarea>
+    <i class="uil uil-notes note-icon"></i>
+  </div>
+<!-- to do list -->
+  <ul class="todoLists"></ul>
+
+  <div class="pending-tasks">
+    <span
+      >You have <span class="pending-num"> no </span> tasks pending.</span
+    >
+    <button class="clear-button">Clear All</button>
+  </div>
+</div>
+<script src="./assets/js/reminder.js"></script>
 </body>
 </html>
