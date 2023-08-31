@@ -39,12 +39,16 @@
     display: flex;
   }
   .navlist a{
-    color: white;
+    color: antiquewhite;
     margin-left: 60px;
     font-size: 15px;
     font-weight: 600;
     border-bottom: 2px solid transparent;
     transition: all .55s ease;
+    background-color: darkgreen;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    
   }
   .navlist a:hover{
     border-bottom: 2px solid white;
