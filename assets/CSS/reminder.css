@@ -76,7 +76,7 @@ body{
   border-radius: 8px;
   padding: 25px;
   margin: 85px auto 0;
-  background-color: #fff;
+  background-color: grey;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 .container .input-field {
@@ -166,7 +166,7 @@ textarea::-webkit-scrollbar {
   margin-top: 25px;
 }
 .pending-tasks span {
-  color: #333;
+  color: white;
 }
 .pending-tasks .clear-button {
   padding: 6px 12px;
