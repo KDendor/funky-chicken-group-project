@@ -1,7 +1,7 @@
 const plantSearchButton = document.getElementById("plantSearchButton");
 const plantNameInput = document.getElementById("plantName");  // Use "plantName" instead of "plantNameInput"
 const expandedInfoDiv = document.getElementById("expandedInfo");
-const chatGptApiKey = "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";
+const chatGptApiKey = "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";
 
 plantSearchButton.addEventListener("click", async () => {
     const plantName = plantNameInput.value;
