@@ -6,6 +6,7 @@
   <title>Sprout</title>
   <!---------custom css link---->
   <link rel="stylesheet" type="text/css" href="./assets/CSS/style.css">
+  <link rel="stylesheet" type="text/css" href="./assets/CSS/login-box.css">
 
    <!---------boxicons link---->
    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
@@ -29,7 +30,7 @@
     <li><a href="track.html">Track</a></li>
     <li><a href="reminder.html">Reminder</a></li>
     <li><a href="aboutus.html">About Us</a></li>
-    <!-- <li><a href="#" data-open="loginModal">Login</a></li> -->
+    <li><a href="#" data-open="loginModal">Login</a></li>
     
   </ul>
   <div class="bx bx-menu" id="menu-icon"></div>
@@ -44,6 +45,37 @@
   </div>
   <div class="hero-img">
     <img src="./img/sprout.png">
+  </div>
+  <div class="reveal-overlay" id="loginModal" data-reveal>
+    <div class="reveal">
+      <h1>Login</h1>
+      <div class="login-box">
+        <div class="row collapse expanded">
+          <div class="small-12 medium-6 column small-order-2 medium-order-1">
+            <div class="login-box-form-section">
+              <h1 class="login-box-title">Sign up</h1>
+              <input class="login-box-input" type="text" name="username" placeholder="Username" />
+              <input class="login-box-input" type="email" name="email" placeholder="E-mail" />
+              <input class="login-box-input" type="password" name="password" placeholder="Password" />
+              <input class="login-box-input" type="password" name="password2" placeholder="Retype password" />
+              <input class="login-box-submit-button" type="submit" name="signup_submit" value="Sign me up" />
+            </div>
+            <div class="or">OR</div>
+          </div>
+          <div class="small-12 medium-6 column small-order-1 medium-order-2 login-box-social-section">
+            <div class="login-box-social-section-inner">
+              <span class="login-box-social-headline">Sign in with<br />your social network</span>
+              <a class="login-box-social-button-facebook">Log in with facebook</a>
+              <a class="login-box-social-button-twitter">Log in with Twitter</a>
+              <a class="login-box-social-button-google">Log in with Google+</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="close-button" data-close aria-label="Close modal" type="button">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
   </div>
   </section>
   
