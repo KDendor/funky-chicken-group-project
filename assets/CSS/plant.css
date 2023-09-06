@@ -88,6 +88,7 @@
   #expandedInfo {
     flex: 1; /* Allow divs to share available space equally */
     box-sizing: border-box;
+    font-family: emoji;
     padding: 10px;
     margin: 10px; /* Add spacing between divs */
     max-width: calc(50% - 20px); /* Limit divs to half of the available width minus spacing */
@@ -101,6 +102,7 @@
     padding: 10px 0;
     margin: 0;
     width: 100%;
+    background: hotpink;
   }
   
   #infoHeader {
