@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sprout</title>
   <!---------custom css link---->
-  <link rel="stylesheet" type="text/css" href="./assets/CSS/aboutus.css">
+  <link rel="stylesheet" type="text/css" href="./assets/CSS/aboutus.css"> 
+  <link rel="stylesheet" type="text/css" href="./assets/CSS/style.css">
+  
 
    <!---------boxicons link---->
    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
@@ -21,85 +23,63 @@
   
 </head>
 <body>
-<header>
-  <a href="index.html" class="logo">Sprout Sage</a>
-    <ul class="navlist">
-      <li><a href="plant.html">Identify</a></li>
-      <li><a href="track.html">Track</a></li>
-      <li><a href="reminder.html">Reminder</a></li>
-      <li><a href="aboutus.html">About Us</a></li>
-    </ul>
-  <div class="bx bx-menu" id="menu-icon"></div>
-</header>
-<div class="container-fluid"> 
-  <h2 style="text-align: center; font-size: 300%; margin-top: 10%;">Our Team</h2>
-  <div class="container-fluid mt-4">
-
-      <div class="col-auto mb-3">
-        <div class="card">
-            <img src="./img/red_sus.png" alt="Alan" class="img-thumbnail"  style="width: 70%">
-            <div class="container">
-              <h4>Alan Mecca</h4>
-              <li><a href="#">LinkedIn</a></li>
-              <li><a href="#">Github</a></li>
-            </div>
-        </div>
+  <div id="headerContainer"></div>
+  <main>
+      <h2 style="text-align: center; font-size: 300%;">Our Team</h2>
+      <div class="container-fluid">
+          <div class="card">
+              <img src="./img/red_sus.png" alt="Alan" class="img-thumbnail">
+              <div class="container">
+                  <h4>Alan Mecca</h4>
+                  <li><a href="#">LinkedIn</a></li>
+                  <li><a href="#">Github</a></li>
+              </div>
+          </div>
+          <div class="card">
+              <img src="./img/green_sus.png" alt="David" class="img-thumbnail">
+              <div class="container">
+                  <h4>David Mora</h4>
+                  <li><a href="#">LinkedIn</a></li>
+                  <li><a href="#">Github</a></li>
+              </div>
+          </div>
+          <div class="card">
+              <img src="./img/orange_sus.png" alt="Caitlyn" class="img-thumbnail">
+              <div class="container">
+                  <h4>Caitlyn Erwin</h4>
+                  <li><a href="#">LinkedIn</a></li>
+                  <li><a href="#">Github</a></li>
+              </div>
+          </div>
+          <div class="card">
+              <img src="./img/pink_sus.png" alt="Cera" class="img-thumbnail">
+              <div class="container">
+                  <h4>Cera Dauhtridge</h4>
+                  <li><a href="#">LinkedIn</a></li>
+                  <li><a href="#">Github</a></li>
+              </div>
+          </div>
+          <div class="card">
+              <img src="./img/purple_sus.png" alt="Rodrigo" class="img-thumbnail">
+              <div class="container">
+                  <h4>Rodrigo Reyes</h4>
+                  <li><a href="https://www.linkedin.com/in/rodrigo-reyes-219b26180/">LinkedIn</a></li>
+                  <li><a href="https://github.com/rodking96">Github</a></li>
+              </div>
+          </div>
+          <div class="card">             
+              <img src="./img/yellow_sus.png" alt="Levi" class="img-thumbnail">
+              <div class="container">
+                  <h4>Levi Livengood</h4>
+                  <li><a href="#">LinkedIn</a></li>
+                  <li><a href="#">Github</a></li>
+              </div>
+          </div>
       </div>
-
-      <div class="col-auto mb-3">
-        <div class="card">
-            <img src="./img/green_sus.png" alt="David" class="img-thumbnail" style="width: 70%">
-            <div class="container">
-              <h4>David Mora</h4>
-              <li><a href="#">LinkedIn</a></li>
-              <li><a href="#">Github</a></li>
-            </div>
-        </div>
-      </div>
-
-      <div class="col-auto mb-3">
-        <div class="card">
-            <img src="./img/orange_sus.png" alt="Caitlyn" class="img-thumbnail" style="width: 70%">
-            <div class="container">
-              <h4>Caitlyn Erwin</h4>
-              <li><a href="#">LinkedIn</a></li>
-              <li><a href="#">Github</a></li>
-            </div>
-        </div>
-      </div>
-  </div>
-    <div class="row">
-      <div class="col-auto mb-3">
-        <div class="card">
-            <img src="./img/pink_sus.png" alt="Cera" class="img-thumbnail" style="width: 70%">
-            <div class="container">
-              <h4>Cera Dauhtridge</h4>
-              <li><a href="#">LinkedIn</a></li>
-              <li><a href="#">Github</a></li>
-            </div>
-        </div>
-      </div>
-
-      <div class="col-auto mb-3">
-        <div class="card">
-            <img src="./img/purple_sus.png" alt="Rodrigo" class="img-thumbnail" style="width: 70%">
-            <div class="container">
-              <h4>Rodrigo Reyes</h4>
-              <li><a href="https://www.linkedin.com/in/rodrigo-reyes-219b26180/">LinkedIn</a></li>
-              <li><a href="https://github.com/rodking96">Github</a></li>
-            </div>
-        </div>
-      </div>
-
-      <div class="col-auto mb-3">
-        <div class="card">             
-            <img src="./img/yellow_sus.png" alt="Levi" class="img-thumbnail" style="width: 70%">
-            <div class="container">
-              <h4>Levi Livengood</h4>
-              <li><a href="#">LinkedIn</a></li>
-              <li><a href="#">Github</a></li>
-            </div>
-        </div>
-      </div>
+  </main>
+  <div id="footerContainer"></div>
+  <script src="./assets/js/script.js"></script>
 </body>
+
+
 </html>

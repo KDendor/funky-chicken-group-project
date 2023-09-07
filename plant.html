@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sprout</title>
   <!---------custom css link---->
+  <link rel="stylesheet" type="text/css" href="./assets/CSS/style.css">
   <link rel="stylesheet" type="text/css" href="./assets/CSS/plant.css">
+  
 
    <!---------boxicons link---->
    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
@@ -18,29 +20,30 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&
   family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&family=Shantell+Sans:ital,wght@1,600&display=swap" rel="stylesheet">
+
 </head>
 <body>
-<header>
-  <a href="index.html" class="logo">Sprout Sage</a>
-    <ul class="navlist">
-      <li><a href="plant.html">Identify</a></li>
-      <li><a href="track.html">Track</a></li>
-      <li><a href="reminder.html">Reminder</a></li>
-      <li><a href="aboutus.html">About Us</a></li>
-    </ul>
-  <div class="bx bx-menu" id="menu-icon"></div>
-</header>
-<div id="searchContainer">
-    <input type="text" id="plantName" placeholder="Enter plant name">
-    <button id="plantSearchButton">Search</button>
+  <div id="headerContainer"></div>
+<main>
+  <div class="search-container">
+    <input type="text" id="plantName" placeholder="Search...">
+    <div class="search-button-container">
+        <button id="plantSearchButton">Search</button>
+    </div>
 </div>
 <div id="infoContainer">
-    <h2 id="infoHeader"></h2>
-    <div id="perunialInfo"></div>
-    <div id="expandedInfo"></div> 
+    <h2 id="infoHeader">Search for your plant to get information on how to water</h2>
+    <div id="perunialInfo" class="hidden"></div>
+    <div id="expandedInfo" class="hidden"></div> 
 </div>
-<script src="./assets/js/openai.js"></script>
 <script src="./assets/js/perunial.js"></script>
+<script src="./assets/js/openai.js"></script>
+<script src="./assets/js/script.js"></script>
+
+</main>
+<div id="footerContainer"></div>
 </body>
 </html>
