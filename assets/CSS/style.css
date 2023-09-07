@@ -230,6 +230,19 @@ main {
     .hidden {
       display: none;
     }
+
+    .icon.hide {
+      display: none;
+  }
+  
+  /* Show the icon when hovering over the link */
+  a:hover .icon {
+      display: inline-block; /* Display the icon inline with the link text */
+  }
+
+  .icon {
+    margin-left: 5px; /* Add space between link text and icon */
+}
     
     @media only screen and (min-width: 1280px) {
       .contain {
