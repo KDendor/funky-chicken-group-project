@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', () => {
   // Get all "navbar-burger" elements
   const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
 
-<<<<<<< HEAD
   // Check if there are any navbar burgers
   if ($navbarBurgers.length > 0) {
       // Add a click event on each of them
@@ -19,7 +18,6 @@ document.addEventListener('DOMContentLoaded', () => {
       });
   }
 });
-=======
 // Function to load and insert content from external HTML files
 function loadAndInsertHTML(file, containerId) {
   fetch(file)
@@ -35,4 +33,3 @@ function loadAndInsertHTML(file, containerId) {
 // Load header and footer content
 loadAndInsertHTML('header.html', 'headerContainer');
 loadAndInsertHTML('footer.html', 'footerContainer');
->>>>>>> 7d67ed533fb9f947db4fafece6b12f4943c9c53a
