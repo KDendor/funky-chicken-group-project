@@ -4,8 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sprout</title>
+   <!---------bulma framework link---->
+   <link rel="stylesheet" type="text/css" href="./assets/CSS/bulma.css">
   <!---------custom css link---->
-  <link rel="stylesheet" type="text/css" href="./assets/CSS/style.css">
+  <link rel="stylesheet" type="text/css" href="./assets/CSS/styles.css">
 
    <!---------boxicons link---->
    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
@@ -20,32 +22,48 @@
   family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   
 </head>
-<body>
-<header>
-  <a href="index.html" class="logo">Sprout Sage</a>
-  <ul class="navlist">
-    <li><a href="plant.html">Identify</a></li>
-    <li><a href="track.html">Track</a></li>
-    <li><a href="reminder.html">Reminder</a></li>
-    <li><a href="aboutus.html">About Us</a></li>
-    <!-- <li><a href="#" data-open="loginModal">Login</a></li> -->
-    
-  </ul>
-  <div class="bx bx-menu" id="menu-icon"></div>
-</header>
-<section class="hero">
-  <div class="hero-text">
-    <h5></h5>
-    <h1>SPROUT</h>
-    <p>As plant owners
-        we want to be able to find information related to our plants
-        so that we can care for them better.</p>
-  </div>
-  <div class="hero-img">
-    <img src="./img/sprout.png">
-  </div>
+<body class="main">
+  <header>
+    <!---------navbar---->
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+          <a class="navbar-item" href="index.html">
+              <h1 class="title is-1 has-text-white">Sprout Sage</h1>
+          </a>
+          <a role="button" class="navbar-burger is-primary" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+          </a>
+      </div>
+      
+      <div class="navbar-menu" id="navbarMenu">
+          <div class="navbar-end">
+            <a class="navbar-item has-text-white" href="plant.html">Identify</a>
+            <a class="navbar-item has-text-white" href="track.html">Track</a>
+            <a class="navbar-item has-text-white" href="reminder.html">Reminder</a>
+            <a class="navbar-item has-text-white" href="aboutus.html">About Us</a>
+          </div>
+      </div>
+  </nav>
+  </header>
+  <!---------main content---->
+  <section class="hero is-fullheight">
+    <div class="hero-body">
+        <div class="container">
+            <div class="columns is-vcentered">
+                <div class="column is-two-thirds">
+                    <h1 class="title is-1 hero">SPROUT</h1>
+                    <p>As plant owners, we want to find information related to our plants to care for them better.</p>
+                </div>
+                <div class="column">
+                    <img src="./assets/img/sprout.png" alt="Sprout Image">
+                </div>
+            </div>
+        </div>
+    </div>
   </section>
-  
-<script src="./assets/js/script.js"></script>
+    
+  <script src="./assets/js/script.js"></script>
 </body>
 </html>

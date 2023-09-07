@@ -1,105 +1,127 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sprout</title>
-  <!---------custom css link---->
-  <link rel="stylesheet" type="text/css" href="./assets/CSS/aboutus.css">
-
-   <!---------boxicons link---->
-   <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-
-  <!---------remxicons link---->
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-  
-  <!---------google fonts link---->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&
-  family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sprout</title>
+    <!---------bulma framework link---->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+   <!---------custom css link---->
+   <link rel="stylesheet" type="text/css" href="./assets/CSS/styles.css">
+   <!---------custom css link---->
+   <link rel="stylesheet" type="text/css" href="./assets/CSS/reset.css">
 </head>
-<body>
-<header>
-  <a href="index.html" class="logo">Sprout Sage</a>
-    <ul class="navlist">
-      <li><a href="plant.html">Identify</a></li>
-      <li><a href="track.html">Track</a></li>
-      <li><a href="reminder.html">Reminder</a></li>
-      <li><a href="aboutus.html">About Us</a></li>
-    </ul>
-  <div class="bx bx-menu" id="menu-icon"></div>
-</header>
-<div class="container-fluid"> 
-  <h2 style="text-align: center; font-size: 300%; margin-top: 10%;">Our Team</h2>
-  <div class="container-fluid mt-4">
 
-      <div class="col-auto mb-3">
-        <div class="card">
-            <img src="./img/red_sus.png" alt="Alan" class="img-thumbnail"  style="width: 70%">
-            <div class="container">
-              <h4>Alan Mecca</h4>
-              <li><a href="#">LinkedIn</a></li>
-              <li><a href="#">Github</a></li>
-            </div>
-        </div>
-      </div>
+<body class="main">
+    <header>
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+          <div class="navbar-brand">
+              <a class="navbar-item" href="index.html">
+                  <h1 class="title is-1 has-text-white">Sprout Sage</h1>
+              </a>
+              <a role="button" class="navbar-burger is-primary" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+                  <span aria-hidden="true"></span>
+                  <span aria-hidden="true"></span>
+                  <span aria-hidden="true"></span>
+              </a>
+          </div>
+          
+          <div class="navbar-menu" id="navbarMenu">
+              <div class="navbar-end">
+                <a class="navbar-item has-text-white" href="plant.html">Identify</a>
+                <a class="navbar-item has-text-white" href="track.html">Track</a>
+                <a class="navbar-item has-text-white" href="reminder.html">Reminder</a>
+                <a class="navbar-item has-text-white" href="aboutus.html">About Us</a>
+              </div>
+          </div>
+      </nav>
+      </header>
+    <section class="section">
+        <div class="container">
+            <h2 class="title is-2 has-text-centered mt-6">Our Team</h2>
+            <div class="columns is-multiline mt-4">
+                <div class="column is-4">
+                    <div class="card">
+                        <img src="./assets/img/red_sus.png" alt="Alan" class="card-img-top">
+                        <div class="card-content">
+                            <h4 class="title is-4">Alan Mecca</h4>
+                            <ul>
+                                <li><a href="#">LinkedIn</a></li>
+                                <li><a href="#">Github</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
 
-      <div class="col-auto mb-3">
-        <div class="card">
-            <img src="./img/green_sus.png" alt="David" class="img-thumbnail" style="width: 70%">
-            <div class="container">
-              <h4>David Mora</h4>
-              <li><a href="#">LinkedIn</a></li>
-              <li><a href="#">Github</a></li>
-            </div>
-        </div>
-      </div>
+                <div class="column is-4">
+                    <div class="card">
+                        <img src="./assets/img/green_sus.png" alt="David" class="card-img-top">
+                        <div class="card-content">
+                            <h4 class="title is-4">David Mora</h4>
+                            <ul>
+                                <li><a href="#">LinkedIn</a></li>
+                                <li><a href="#">Github</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
 
-      <div class="col-auto mb-3">
-        <div class="card">
-            <img src="./img/orange_sus.png" alt="Caitlyn" class="img-thumbnail" style="width: 70%">
-            <div class="container">
-              <h4>Caitlyn Erwin</h4>
-              <li><a href="#">LinkedIn</a></li>
-              <li><a href="#">Github</a></li>
-            </div>
-        </div>
-      </div>
-  </div>
-    <div class="row">
-      <div class="col-auto mb-3">
-        <div class="card">
-            <img src="./img/pink_sus.png" alt="Cera" class="img-thumbnail" style="width: 70%">
-            <div class="container">
-              <h4>Cera Dauhtridge</h4>
-              <li><a href="#">LinkedIn</a></li>
-              <li><a href="#">Github</a></li>
-            </div>
-        </div>
-      </div>
+                <div class="column is-4">
+                    <div class="card">
+                        <img src="./assets/img/orange_sus.png" alt="Caitlyn" class="card-img-top">
+                        <div class="card-content">
+                            <h4 class="title is-4">Caitlyn Erwin</h4>
+                            <ul>
+                                <li><a href="#">LinkedIn</a></li>
+                                <li><a href="#">Github</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
 
-      <div class="col-auto mb-3">
-        <div class="card">
-            <img src="./img/purple_sus.png" alt="Rodrigo" class="img-thumbnail" style="width: 70%">
-            <div class="container">
-              <h4>Rodrigo Reyes</h4>
-              <li><a href="https://www.linkedin.com/in/rodrigo-reyes-219b26180/">LinkedIn</a></li>
-              <li><a href="https://github.com/rodking96">Github</a></li>
-            </div>
-        </div>
-      </div>
+                <div class="column is-4">
+                    <div class="card">
+                        <img src="./assets/img/pink_sus.png" alt="Cera" class="card-img-top">
+                        <div class="card-content">
+                            <h4 class="title is-4">Cera Daughtridge</h4>
+                            <ul>
+                                <li><a href="#">LinkedIn</a></li>
+                                <li><a href="#">Github</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
 
-      <div class="col-auto mb-3">
-        <div class="card">             
-            <img src="./img/yellow_sus.png" alt="Levi" class="img-thumbnail" style="width: 70%">
-            <div class="container">
-              <h4>Levi Livengood</h4>
-              <li><a href="#">LinkedIn</a></li>
-              <li><a href="#">Github</a></li>
+                <div class="column is-4">
+                    <div class="card">
+                        <img src="./assets/img/purple_sus.png" alt="Rodrigo" class="card-img-top">
+                        <div class="card-content">
+                            <h4 class="title is-4">Rodrigo Reyes</h4>
+                            <ul>
+                                <li><a href="https://www.linkedin.com/in/rodrigo-reyes-219b26180/">LinkedIn</a></li>
+                                <li><a href="https://github.com/rodking96">Github</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column is-4">
+                    <div class="card">
+                        <img src="./assets/img/yellow_sus.png" alt="Levi" class="card-img-top">
+                        <div class="card-content">
+                            <h4 class="title is-4">Levi Livengood</h4>
+                            <ul>
+                                <li><a href="#">LinkedIn</a></li>
+                                <li><a href="#">Github</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-      </div>
+    </section>
 </body>
+
 </html>
+
