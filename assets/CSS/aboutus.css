@@ -1,58 +1,25 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    list-style: none;
-    text-decoration: none;
-  }
-  header{
-    position: fixed;
-    right: 0;
-    top: 0;
-    z-index: 1000;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 33px 9%;
-    background: transparent;
-  }
-  body{
-    background: #133917;
-  }
+main{
+    background: var(--dgreen);
+}
+
   h1, h2, h3, h4, h5 {
     line-height: 1.5;
     font-weight: 300;
     margin: 0.0em 0;
 }
-  h2 {
+
+h2 {
     font-size: 2em;
     font: bold;
     color: white;
 }
+
 .logo{
     font-size: 30px;
     font-weight: 700;
     color: white;
   }
-  .navlist{
-    display: flex;
-  }
-  .navlist a{
-    color: antiquewhite;
-    margin-left: 60px;
-    font-size: 15px;
-    font-weight: 600;
-    border-bottom: 2px solid transparent;
-    transition: all .55s ease;
-    background-color: darkgreen;
-    padding: 10px 10px 10px 10px;
-    border-radius: 10px;
-    
-  }
-  .navlist a:hover{
-    border-bottom: 2px solid white;
-  }
+ 
   #menu-icon{
     color: white;
     font-size: 35px;
@@ -60,14 +27,32 @@
     cursor: pointer;
     display: none;
   }
-  .card {
-    padding: 20px 0px 20px 20px;
-    box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2);
-    margin: 8px 8px 8px 8px;
-    float: left;
-    width: 13%;
-    color: white;
+
+  .container-fluid {
+    display: flex;
+    justify-content: space-around; /* Adjust spacing between cards */
+    flex-wrap: wrap; /* Allow cards to wrap to the next line if needed */
 }
+
+.card {
+    text-align: center;
+    width: 10%; /* Adjust the width of each card as needed */
+    margin: 10px; /* Adjust the margin between cards */
+}
+
+.card img {
+    width: 100%; /* Make the image inside each card fill its container */
+}
+
+.container {
+    padding: 10px;
+}
+
+.card:hover {
+   box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2);
+   background-color: var(--light);
+}
+
 a {
   color: hotpink;
 }

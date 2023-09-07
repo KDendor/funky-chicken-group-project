@@ -6,6 +6,7 @@
   <title>Sprout</title>
   <!---------custom css link---->
   <link rel="stylesheet" type="text/css" href="./assets/CSS/reminder.css">
+  <link rel="stylesheet" type="text/css" href="./assets/CSS/style.css">
 
    <!---------boxicons link---->
    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
@@ -26,16 +27,8 @@
   
 </head>
 <body>
-<header>
-  <a href="index.html" class="logo">Sprout Sage</a>
-    <ul class="navlist">
-      <li><a href="plant.html">Identify</a></li>
-      <li><a href="track.html">Track</a></li>
-      <li><a href="reminder.html">Reminder</a></li>
-      <li><a href="aboutus.html">About Us</a></li>
-    </ul>
-  <div class="bx bx-menu" id="menu-icon"></div>
-</header>
+  <div id="headerContainer"></div>
+<main>
 <div class="container">
   <div class="input-field">
     <textarea placeholder="Enter your new todo"></textarea>
@@ -51,6 +44,10 @@
     <button class="clear-button">Clear All</button>
   </div>
 </div>
+</main>
+<div id="footerContainer"></div>
 <script src="./assets/js/reminder.js"></script>
+<script src="./assets/js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/dayjs@1.10.7/dayjs.min.js"></script>
 </body>
 </html>

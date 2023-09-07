@@ -1,70 +1,51 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    list-style: none;
-    text-decoration: none;
-  }
-  header{
-    position: fixed;
-    right: 0;
-    top: 0;
-    z-index: 1000;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 33px 9%;
-    background: transparent;
-  }
-  body{
-    background: #133917;
-  }
-  .logo{
-    font-size: 30px;
-    font-weight: 700;
-    color: white;
-  }
-  .navlist{
-    display: flex;
-  }
-  .navlist a{
-    color: white;
-    margin-left: 60px;
-    font-size: 15px;
-    font-weight: 600;
-    border-bottom: 2px solid transparent;
-    transition: all .55s ease;
-  }
-  .navlist a:hover{
-    border-bottom: 2px solid white;
-  }
-  #menu-icon{
+body {
+  font-family: 'Rubik', sans-serif;
+  text-align: center;
+}
+ 
+ #menu-icon{
     color: white;
     font-size: 35px;
     z-index: 10001;
     cursor: pointer;
     display: none;
   }
-  #searchContainer {
+
+
+  .search-container {
     display: flex;
-    gap: 10px;
-    margin-top: 100px;
-    margin-left: 50%;
-  }
-  
-  #plantName {
-    padding: 5px;
-    border: 1px solid #133917;
-  }
-  
-  #searchButton {
-    padding: 5px 10px;
-    background-color: #133917;
-    color: white;
+    flex-direction: column;
+    align-items: center;
+}
+
+#plantName {
+    font-family: 'Rubik', sans-serif;
+    padding: 10px;
+    border: 1px solid var(--grey);
+    border-radius: 5px;
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+#search-button-container {
+    display: flex; /* Use flex display */
+}
+
+#plantSearchButton {
+    font-family: 'Shantell Sans', cursive;
+    background-color: var(--lgreen);
+    color: var(--light);
     border: none;
+    border-radius: 5px;
+    padding: 10px; /* Adjust the padding */
     cursor: pointer;
-  }
+    flex: 1; /* Make the button expand to fill the available space */
+    width: 300px;
+}
+
+#plantSearchButton:hover {
+    background-color: var(--dgreen);
+}
   
   #infoContainer {
     display: flex; /* Display flex to arrange divs side by side */
@@ -93,20 +74,14 @@
     margin: 10px; /* Add spacing between divs */
     max-width: calc(50% - 20px); /* Limit divs to half of the available width minus spacing */
   }
-  
-  h2 {
-    background-color: #133917;
-    color: white;
-    font-size: 24px;
+
+  body {
+    font-family: 'Rubik', sans-serif;
     text-align: center;
-    padding: 10px 0;
-    margin: 0;
-    width: 100%;
-    background: hotpink;
-  }
-  
-  #infoHeader {
-    background-color: #133917;
-    width: 100%;
-  }
+}
+
+
+#plantSearchBUtton:hover {
+    background-color: var(--dgreen);
+}
   
