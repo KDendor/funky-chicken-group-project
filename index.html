@@ -18,8 +18,7 @@
   <!---------google fonts link---->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Permanet+Marker&
-  family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Permanet+Marker&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <script
     src="https://code.jquery.com/jquery-3.3.1.js"
     integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
@@ -27,32 +26,9 @@
 </script>
 </head>
 <body class="main">
-  <header>
-    <!---------navbar---->
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-      <div class="navbar-brand">
-          <a class="navbar-item" href="index.html">
-              <h1 class="title is-1 has-text-white">Sprout Sage</h1>
-          </a>
-          <a role="button" class="navbar-burger is-primary" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
-              <span aria-hidden="true"></span>
-              <span aria-hidden="true"></span>
-              <span aria-hidden="true"></span>
-          </a>
-      </div>
-      
-      <div class="navbar-menu" id="navbarMenu">
-          <div class="navbar-end">
-            <a class="navbar-item has-text-white" href="plant.html">Identify</a>
-            <a class="navbar-item has-text-white" href="track.html">Track</a>
-            <a class="navbar-item has-text-white" href="reminder.html">Reminder</a>
-            <a class="navbar-item has-text-white" href="aboutus.html">About Us</a>
-          </div>
-      </div>
-  </nav>
-  </header>
+  <div id="headerContainer"></div>
   <!---------main content---->
-  <section class="hero is-fullheight">
+  <main class="hero is-fullheight">
     <div class="hero-body">
         <div class="container">
             <div class="columns is-vcentered">
@@ -66,7 +42,9 @@
             </div>
         </div>
     </div>
-  </section>
+  </main>
+
+  <div id="footerContainer"></div>
     
   <script src="./assets/js/script.js"></script>
 </body>

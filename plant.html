@@ -14,31 +14,10 @@
 </head>
 
 <body>
-    <header>
-        <nav class="navbar" role="navigation" aria-label="main navigation">
-          <div class="navbar-brand">
-              <a class="navbar-item" href="index.html">
-                  <h1 class="title is-1 has-text-white">Sprout Sage</h1>
-              </a>
-              <a role="button" class="navbar-burger is-primary" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
-                  <span aria-hidden="true"></span>
-                  <span aria-hidden="true"></span>
-                  <span aria-hidden="true"></span>
-              </a>
-          </div>
-          
-          <div class="navbar-menu" id="navbarMenu">
-              <div class="navbar-end">
-                <a class="navbar-item has-text-white" href="plant.html">Identify</a>
-                <a class="navbar-item has-text-white" href="track.html">Track</a>
-                <a class="navbar-item has-text-white" href="reminder.html">Reminder</a>
-                <a class="navbar-item has-text-white" href="aboutus.html">About Us</a>
-              </div>
-          </div>
-      </nav>
+    <div id="headerContainer"></div>
 
-    <section class="section">
-        <div class="container">
+    <main class="section">
+        <div class="container has-text-white">
             <div class="columns is-centered mt-5">
                 <div class="column is-half">
                     <div class="field has-addons">
@@ -54,7 +33,7 @@
 
             <div class="columns is-centered mt-5">
                 <div class="column is-half">
-                    <h2 class="title is-2 has-text-centered" id="infoHeader"></h2>
+                    <h2 class="title is-2 has-text-centered has-text-white" id="infoHeader"></h2>
                     <div class="columns">
                         <div class="column" id="perunialInfo"></div>
                         <div class="column" id="expandedInfo"></div>
@@ -62,8 +41,10 @@
                 </div>
             </div>
         </div>
-    </section>
-
+    </main>
+    <div id="footerContainer"></div>
+    
+    <script src="./assets/js/script.js"></script>
     <script src="./assets/js/openai.js"></script>
     <script src="./assets/js/perunial.js"></script>
 </body>

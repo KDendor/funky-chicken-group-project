@@ -7,7 +7,7 @@
   <!---------bulma framework link---->
   <link rel="stylesheet" type="text/css" href="./assets/CSS/bulma.css">
   <!---------custom css link---->
-  <link rel="stylesheet" type="text/css" href="./assets/CSS/style.css">
+  <link rel="stylesheet" type="text/css" href="./assets/CSS/styles.css">
 
   <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
@@ -17,33 +17,12 @@
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 </head>
 <body class="main">
-    <header>
-        <nav class="navbar" role="navigation" aria-label="main navigation">
-          <div class="navbar-brand">
-              <a class="navbar-item" href="index.html">
-                  <h1 class="title is-1 has-text-white">Sprout Sage</h1>
-              </a>
-              <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
-                  <span aria-hidden="true"></span>
-                  <span aria-hidden="true"></span>
-                  <span aria-hidden="true"></span>
-              </a>
-          </div>
-          
-          <div class="navbar-menu" id="navbarMenu">
-              <div class="navbar-end">
-                <a class="navbar-item has-text-white" href="plant.html">Identify</a>
-                <a class="navbar-item has-text-white" href="track.html">Track</a>
-                <a class="navbar-item has-text-white" href="reminder.html">Reminder</a>
-                <a class="navbar-item has-text-white" href="aboutus.html">About Us</a>
-              </div>
-          </div>
-      </nav>
-      </header>
+    <div id="headerContainer"></div>
 
-    <section class="hero is-fullheight">
+    <main class="hero remind">
         <div class="hero-body">
             <div class="container">
+                <h2 class="title is-2 has-text-centered mt-6">Reminder</h2>
                 <div class="field">
                     <div class="control is-expanded input-field">
                         <textarea class="textarea" placeholder="Enter your new todo"></textarea>
@@ -68,10 +47,12 @@
                 </div>
             </div>
         </div>
-    </section>
+    </main>
 
-
+    <div id="footerContainer"></div>
+    
+    <script src="./assets/js/script.js"></script>
   <script src="./assets/js/reminder.js"></script>
-  <script src="./assets/js/script.js"></script>0
+  <script src="./assets/js/script.js"></script>
 </body>
 </html>

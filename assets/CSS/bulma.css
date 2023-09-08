@@ -3193,7 +3193,6 @@ a.tag:hover {
 }
 
 .title {
-  color: #363636;
   font-size: 2rem;
   font-weight: 600;
   line-height: 1.125;
@@ -5406,7 +5405,6 @@ button.dropdown-item.is-active {
 }
 
 .navbar {
-  background-color: white;
   min-height: 3.25rem;
   position: relative;
   z-index: 30;
@@ -11845,7 +11843,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 }
 
 .footer {
-  background-color: #fafafa;
+
   padding: 3rem 1.5rem 6rem;
 }
 /*# sourceMappingURL=bulma.css.map */
