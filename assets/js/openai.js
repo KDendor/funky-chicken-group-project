@@ -2,7 +2,7 @@ const plantSearchButton = document.getElementById("plantSearchButton");
 const plantNameInput = document.getElementById("plantName"); 
 const expandedInfoDiv = document.getElementById("expandedInfo");
 
-const chatGptApiKey = "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";
+const chatGptApiKey = "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";
 
 plantSearchButton.addEventListener("click", async () => {
     const plantName = plantNameInput.value;
