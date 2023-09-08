@@ -1,6 +1,23 @@
-let menu = document.querySelector('#menu-icon');
-let navlist = document.querySelector('.navlist');
+document.addEventListener('DOMContentLoaded', () => {
+  // Get all "navbar-burger" elements
+  const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
 
+  // Check if there are any navbar burgers
+  if ($navbarBurgers.length > 0) {
+      // Add a click event on each of them
+      $navbarBurgers.forEach( el => {
+          el.addEventListener('click', () => {
+              // Get the target from the "data-target" attribute
+              const target = el.dataset.target;
+              const $target = document.getElementById(target);
+
+              // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+              el.classList.toggle('is-active');
+              $target.classList.toggle('is-active');
+          });
+      });
+  }
+});
 // Function to load and insert content from external HTML files
 function loadAndInsertHTML(file, containerId) {
   fetch(file)
@@ -16,27 +33,3 @@ function loadAndInsertHTML(file, containerId) {
 // Load header and footer content
 loadAndInsertHTML('header.html', 'headerContainer');
 loadAndInsertHTML('footer.html', 'footerContainer');
-
-const header = document.querySelector('.fixed-header');
-
-// Store the initial scroll position
-let lastScrollTop = 0;
-
-// Function to add or remove the shadow based on scroll direction
-function handleScroll() {
-  const scrollTop = window.scrollY || document.documentElement.scrollTop;
-
-  if (scrollTop > lastScrollTop) {
-    // Scrolling down, remove the shadow
-    header.style.boxShadow = '0 0 0 rgba(0, 0, 0, 0)';
-  } else {
-    // Scrolling up, add the shadow
-    header.style.boxShadow = '0 2px 4px rgba(0, 0, 0, 0.1)'; // Adjust shadow as needed
-  }
-
-  // Update the last scroll position
-  lastScrollTop = scrollTop;
-}
-
-// Listen for scroll events
-window.addEventListener('scroll', handleScroll);

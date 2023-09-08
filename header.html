@@ -1,15 +1,28 @@
 <link rel="icon" type="image/png" href="favicon.ico">
-<header class="fixed-header">
+<!---------bulma framework link---->
+<link rel="stylesheet" type="text/css" href="./assets/CSS/bulma.css">
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&family=Shantell+Sans:ital,wght@1,600&display=swap" rel="stylesheet">
 
-<a href="index.html" class="logo">
-   <img src="./img/sprout-logo.png" >
-
-</a>
-<ul class="navlist">
-  <li><a href="plant.html">Identify<img src="favicon.ico" alt="Custom Icon" class="icon hide"></a></li>
-  <li><a href="track.html">Track<img src="favicon.ico" alt="Custom Icon" class="icon hide"></a></li>
-  <li><a href="reminder.html">Reminder<img src="favicon.ico" alt="Custom Icon" class="icon hide"></a></li>
-  <li><a href="aboutus.html">About Us<img src="favicon.ico" alt="Custom Icon" class="icon hide"></a></li>
-</ul>
-<div class="bx bx-menu" id="menu-icon"></div>
+<header>
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item logo" href="index.html">
+          <img src="./assets/img/sprout-logo.png" alt="Sprout Logo Leaf">
+        </a>
+        <a role="button" class="navbar-burger is-primary" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+    
+    <div class="navbar-menu" id="navbarMenu">
+        <div class="navbar-end">
+          <a class="navbar-item lists" href="plant.html">Identify<img src="favicon.ico" alt="Custom Icon" class="icon hide"></a>
+          <a class="navbar-item lists" href="track.html">Track<img src="favicon.ico" alt="Custom Icon" class="icon hide"></a>
+          <a class="navbar-item lists" href="reminder.html">Reminder<img src="favicon.ico" alt="Custom Icon" class="icon hide"></a>
+          <a class="navbar-item lists" href="aboutus.html">About Us<img src="favicon.ico" alt="Custom Icon" class="icon hide"></a>
+        </div>
+    </div>
+  </nav>
 </header>

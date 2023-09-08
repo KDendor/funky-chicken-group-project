@@ -4,50 +4,55 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sprout</title>
+  <!---------bulma framework link---->
+  <link rel="stylesheet" type="text/css" href="./assets/CSS/bulma.css">
   <!---------custom css link---->
-  <link rel="stylesheet" type="text/css" href="./assets/CSS/reminder.css">
-  <link rel="stylesheet" type="text/css" href="./assets/CSS/style.css">
+  <link rel="stylesheet" type="text/css" href="./assets/CSS/styles.css">
 
-   <!---------boxicons link---->
-   <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-
-  <!---------remxicons link---->
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-  
-  <!---------google fonts link---->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&
-  family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <!-- Unicons CSS -->
-  <link
-  rel="stylesheet"
-  href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
-/>
-  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 </head>
-<body>
-  <div id="headerContainer"></div>
-<main>
-<div class="container">
-  <div class="input-field">
-    <textarea placeholder="Enter your new todo"></textarea>
-    <i class="uil uil-notes note-icon"></i>
-  </div>
-<!-- to do list -->
-  <ul class="todoLists"></ul>
+<body class="main">
+    <div id="headerContainer"></div>
 
-  <div class="pending-tasks">
-    <span
-      >You have <span class="pending-num"> no </span> tasks pending.</span
-    >
-    <button class="clear-button">Clear All</button>
-  </div>
-</div>
-</main>
-<div id="footerContainer"></div>
-<script src="./assets/js/reminder.js"></script>
-<script src="./assets/js/script.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/dayjs@1.10.7/dayjs.min.js"></script>
+    <main class="hero remind">
+        <div class="hero-body">
+            <div class="container">
+                <h2 class="title is-2 has-text-centered mt-6">Reminder</h2>
+                <div class="field">
+                    <div class="control is-expanded input-field">
+                        <textarea class="textarea" placeholder="Enter your new todo"></textarea>
+                    </div>
+                    <span class="icon is-small is-left">
+                        <i class="uil uil-notes note-icon"></i>
+                    </span>
+                </div>
+
+                <!-- To Do List -->
+                <ul class="todoLists">
+                    <!-- List items will be dynamically generated here -->
+                </ul>
+
+                <div class="columns is-vcentered">
+                    <div class="column">
+                        <span class="is-size-6">You have <span class="pending-num">no</span> tasks pending.</span>
+                    </div>
+                    <div class="column">
+                        <button class="clear-button button is-danger is-small">Clear All</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="footerContainer"></div>
+    
+    <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/reminder.js"></script>
+  <script src="./assets/js/script.js"></script>
 </body>
 </html>
