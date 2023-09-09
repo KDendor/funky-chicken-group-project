@@ -2,8 +2,6 @@ const plantSearchButton = document.getElementById("plantSearchButton");
 const plantNameInput = document.getElementById("plantName"); 
 const expandedInfoDiv = document.getElementById("expandedInfo");
 
-const chatGptApiKey = "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";
-
 plantSearchButton.addEventListener("click", async () => {
     const plantName = plantNameInput.value;
 
@@ -14,7 +12,7 @@ plantSearchButton.addEventListener("click", async () => {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
-            "Authorization": `Bearer ${chatGptApiKey}`
+            "Authorization": `Bearer ${ApiKey}`
         },
         body: JSON.stringify({
             messages: [

@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     searchButton.addEventListener("click", () => {
         const plantName = plantNameInput.value;
-        const perunialKey = "sk-iTS464edf444c5e1f2019";
+        
 
         if (plantName) {
             const perunialUrl = `https://perenual.com/api/species-list?key=${perunialKey}&q=${encodeURIComponent(plantName)}`;
