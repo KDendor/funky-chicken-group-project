@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     searchButton.addEventListener("click", () => {
         const plantName = plantNameInput.value;
-        
 
         if (plantName) {
             const perunialUrl = `https://perenual.com/api/species-list?key=${perunialKey}&q=${encodeURIComponent(plantName)}`;
@@ -21,24 +20,25 @@ document.addEventListener("DOMContentLoaded", () => {
                     if (plantData.length > 0) {
                         const firstPlant = plantData[0]; // Get the first plant
 
-                        const perunialInfo = `
-                            <div>
-                                <p>Scientific Name: ${firstPlant.scientific_name.join(", ")}</p>
-                                <p>Watering: ${firstPlant.watering}</p>
-                                <p>Cycle: ${firstPlant.cycle}</p>
-                                <img src="${firstPlant.default_image.small_url}" alt="${firstPlant.common_name} Image">
-                            </div>
+                        // Construct the HTML for the scientific name and plant image
+                        const scientificNameHTML = `<h2 class="subtitle is-5 has-text-black">(${firstPlant.scientific_name.join(", ")})</h2>`;
+                        const plantImageHTML = `
+                            <img src="${firstPlant.default_image.small_url}" alt="${firstPlant.common_name} Image">
                         `;
 
+                        // Set the scientific name and plant image HTML
+                        document.getElementById("infoHeader").innerHTML = `${plantName} ${scientificNameHTML}`;
+                        document.getElementById("plantImage").innerHTML = plantImageHTML;
+
                         // Remove the 'hidden' class from perunialInfoDiv
-                        perunialInfoDiv.classList.remove("hidden");
+                        // perunialInfoDiv.classList.remove("hidden");
 
                         // Remove the 'hidden' class from expandedInfoDiv
-                        expandedInfoDiv.classList.remove("hidden");
-                        expandedInfoDiv.innerHTML = ""; // Clear expanded info
+                        // expandedInfoDiv.classList.remove("hidden");
+                        //expandedInfoDiv.innerHTML = ""; // Clear expanded info
 
                         // Display the retrieved plant information
-                        perunialInfoDiv.innerHTML = perunialInfo;
+                        //perunialInfoDiv.innerHTML = perunialInfo;
                     } else {
                         perunialInfoDiv.innerHTML = "<p>No plants found with that name.</p>";
                         expandedInfoDiv.innerHTML = ""; // Clear expanded info
@@ -46,12 +46,12 @@ document.addEventListener("DOMContentLoaded", () => {
                 })
                 .catch(error => {
                     console.error("Error fetching plant information:", error);
-                    perunialInfoDiv.innerHTML = "<p>An error occurred while fetching plant information.</p>";
-                    expandedInfoDiv.innerHTML = ""; // Clear expanded info
+                    //perunialInfoDiv.innerHTML = "<p>An error occurred while fetching plant information.</p>";
+                    //expandedInfoDiv.innerHTML = ""; // Clear expanded info
                 });
         } else {
             perunialInfoDiv.innerHTML = "<p>Please enter a plant name.</p>";
-            expandedInfoDiv.innerHTML = ""; // Clear expanded info
+            //expandedInfoDiv.innerHTML = ""; // Clear expanded info
         }
     });
 });
