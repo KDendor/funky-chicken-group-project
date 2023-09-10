@@ -7,6 +7,8 @@ plantSearchButton.addEventListener("click", async () => {
 
     const prompt = `please give me some information on ${plantName} house plant. One paragraph at the top titled description, then a section about watering cycle then a third section titled location and exposure, explaining the location and the zones the plant thrives in.`;
 
+
+
     infoHeader.textContent = plantName;
     const response = await fetch("https://api.openai.com/v1/chat/completions", {
         method: "POST",

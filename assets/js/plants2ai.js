@@ -12,6 +12,15 @@ document.addEventListener("DOMContentLoaded", () => {
   
       const prompt = `please give me some information on ${plantName} house plant. I would like a brief description titled 'Description', watering cycle titled 'Watering Cycle' and what Hardiness Zones it lives titled 'Hardiness Zones'.`;
   
+
+        const loadingElement = document.getElementById("loading");
+        
+        for (let i = 0; i < loadingElement.length; i++) {
+            const loadingElement = loadingElement[i];
+            // Perform actions on each element
+            loadingElement.classList.remove("hidden");
+        }
+
       infoHeader.textContent = plantName;
       const response = await fetch("https://api.openai.com/v1/chat/completions", {
         method: "POST",
@@ -99,7 +108,7 @@ document.addEventListener("DOMContentLoaded", () => {
               }
           }
       }
-      
+
       // Display the extracted information
       descriptionContent.innerHTML = `<h2 subtitle has-text-white is-2>DESCRIPTION</h2><h2 subtitle has-text-white is-5>${description}</h2>`;
       wateringContent.innerHTML = `<h2 subtitle has-text-white is-2>WATERING CYCLE</h2><h2 subtitle has-text-white is-5>${watering}</h2>`;

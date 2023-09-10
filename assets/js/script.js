@@ -40,19 +40,19 @@ const banner = document.querySelector('#banner');
 // Add a click event listener to the .banner element
 banner.addEventListener('click', function() {
   // Redirect to the desired URL (plant.html)
-  window.location.href = '/plant.html';
+  window.location.href = 'plant.html';
 });
 
 const banner2 = document.querySelector('#banner2');
 // Add a click event listener to the .banner element
 banner2.addEventListener('click', function() {
     // Redirect to the desired URL (plant.html)
-    window.location.href = '/track.html';
+    window.location.href = 'track.html';
   });
 
   const banner3 = document.querySelector('#banner3');
   // Add a click event listener to the .banner element
 banner3.addEventListener('click', function() {
     // Redirect to the desired URL (plant.html)
-    window.location.href = '/reminder.html';
+    window.location.href = 'reminder.html';
   });
