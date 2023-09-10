@@ -20,13 +20,13 @@
     border-radius: 50px;
   }
   
-  body {
+  main {
     position: relative;
-    min-height: 100vh;
+    min-height: 70vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: 30px;
+    padding-bottom: 0px;
     background-color: #e2e1dc;
   }
   .container {
