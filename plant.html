@@ -5,17 +5,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Sprout</title>
-        <!---------bulma framework link---->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
-        <!---------custom css link---->
-        <link rel="stylesheet" type="text/css" href="./assets/CSS/styles.css">
-        <!---------custom css link---->
-        <link rel="stylesheet" type="text/css" href="./assets/CSS/reset.css">
+    <!---------bulma framework link---->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+    <!---------custom css link---->
+    <link rel="stylesheet" type="text/css" href="./assets/CSS/styles.css">
+    <!---------custom css link---->
+    <link rel="stylesheet" type="text/css" href="./assets/CSS/reset.css">
 </head>
 
 <body>
     <div id="headerContainer"></div>
-
     <main class="section">
         <div class="container has-text-white">
             <div class="columns is-centered mt-5">
@@ -30,23 +29,45 @@
                     </div>
                 </div>
             </div>
-
-            <div class="columns is-centered mt-5">
-                <div class="column is-half">
-                    <h2 class="title is-2 has-text-centered has-text-white" id="infoHeader"></h2>
-                    <div class="columns">
-                        <div class="column" id="perunialInfo"></div>
-                        <div class="column" id="expandedInfo"></div>
+            <hr>
+            <div class="container has-text-white">
+                <div class="columns is-centered mt-5 backlight">
+                    <div class="column is-half">
+                        <h2 class="title is-2 has-text-centered has-text-black" id="infoHeader"></h2>
+                        <div class="columns is-centered"> <!-- Centered columns -->
+                            <!-- Description content goes here -->
+                            <div class="column is-9"> <!-- Adjust the width as needed -->
+                                <div class="info-container" id="description">
+                                    <!-- Description content goes here -->
+                                </div>
+                            </div>
+                            <div class="column is-4 image-container has-text-centered" id="plantImage">
+                                <!-- Plant image will be displayed here using JavaScript -->
+                            </div>
+                            <div class="column is-9"> <!-- Adjust the width as needed -->
+                                <div class="info-container">
+                                    <!-- Watering content goes here -->
+                                    <div id="watering"></div>
+                                    <!-- Hardiness Zones content goes here -->
+                                    <div id="hardinessZones"></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+            
+            
+            </div>
         </div>
     </main>
+
     <div id="footerContainer"></div>
-    
-    <script src="./assets/js/script.js"></script>
-    <script src="./assets/js/openai.js"></script>
+
+    <script src="./assets/js/config.js"></script>
+    <script src="./assets/js/plants2ai.js"></script>
     <script src="./assets/js/perunial.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
