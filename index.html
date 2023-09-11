@@ -4,9 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sprout</title>
+   <!---------bulma framework link---->
+   <link rel="stylesheet" type="text/css" href="./assets/CSS/bulma.css">
   <!---------custom css link---->
-  <link rel="stylesheet" type="text/css" href="./assets/CSS/style.css">
-
+  <link rel="stylesheet" type="text/css" href="./assets/CSS/styles.css">
+  
    <!---------boxicons link---->
    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 
@@ -16,36 +18,69 @@
   <!---------google fonts link---->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Permanet+Marker&
-  family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-  
+  <link href="https://fonts.googleapis.com/css2?family=Permanet+Marker&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+</script>
 </head>
-<body>
-<header>
-  <a href="index.html" class="logo">Sprout Sage</a>
-  <ul class="navlist">
-    <li><a href="plant.html">Identify</a></li>
-    <li><a href="track.html">Track</a></li>
-    <li><a href="reminder.html">Reminder</a></li>
-    <li><a href="aboutus.html">About Us</a></li>
-    <!-- <li><a href="#" data-open="loginModal">Login</a></li> -->
+
+<body class="main">
+
+  <div id="headerContainer"></div>
+  <main class="hero is-fullheight">
+    <h1 class="title is-2 has-text-white">Welcome to Sprout</h1>
+    <h2 class="subtitle is-5 has-text-white">Where plant owners can find information related to our plants and learn to care for them better.</h2>
+
+    <div class="columns is-full" id="banner">
+      <div class="left">
+        <!-- Place your image here -->
+              <img src="./assets/img/plant-1.png" alt="Your Image">
+      </div>
+      <div class="right">
+        <div class="top-right">
+          <h2 class="subtitle is-1 has-text-black">IDENTIFY YOUR PLANT HERE!</h2>
+        </div>
+        <div class="bottom-right">
+          <p>Tell us your plant name and we gather information from various sources to tell you the most up-to-date information on how to care for your plant.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="columns is-full" id="banner2">
+      <div class="left-custom">
+        <div class="top-left-custom">
+          <h2 class="subtitle is-1 has-text-black">TRACK YOUR PLANTS HEALTH</h2>
+        </div>
+        <div class="bottom-left-custom">
+          <p>Keep a visual timeline on how your plant is doing.  Compare it to how it should be doing based on our specialized search of all things houseplants and make sure yours are healthy and happy!</p>
+        </div>
+      </div>
+      <div class="right-custom">
+        <!-- Place your image here -->
+        <img src="./assets/img/plant-2.png" alt="Your Image">
+      </div>
+    </div>
+
+    <div class="columns is-full" id="banner3">
+      <div class="left">
+        <!-- Place your image here -->
+              <img src="./assets/img/watering-plant.png" alt="Your Image">
+      </div>
+      <div class="right">
+        <div class="top-right">
+          <h2 class="subtitle is-1 has-text-black">SET A REMINDER TO FEED YOUR PLANTS</h2>
+        </div>
+        <div class="bottom-right">
+          <p>Just like us humans, plants need food and water also!  So don't forget to water and feed your plants accordingly.</p>
+        </div>
+      </div> 
+    </div>
+  </main>
+
+  <div id="footerContainer"></div>
     
-  </ul>
-  <div class="bx bx-menu" id="menu-icon"></div>
-</header>
-<section class="hero">
-  <div class="hero-text">
-    <h5></h5>
-    <h1>SPROUT</h>
-    <p>As plant owners
-        we want to be able to find information related to our plants
-        so that we can care for them better.</p>
-  </div>
-  <div class="hero-img">
-    <img src="./img/sprout.png">
-  </div>
-  </section>
-  
-<script src="./assets/js/script.js"></script>
+  <script src="./assets/js/script.js"></script>
 </body>
 </html>
