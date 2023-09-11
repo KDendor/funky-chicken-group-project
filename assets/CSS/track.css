@@ -1,49 +1,117 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    list-style: none;
-    text-decoration: none;
-  }
-  header{
-    position: fixed;
-    right: 0;
-    top: 0;
-    z-index: 1000;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 33px 9%;
-    background: transparent;
-  }
-  body{
-    background: #133917;
-  }
-.logo{
-    font-size: 30px;
-    font-weight: 700;
-    color: white;
-  }
-  .navlist{
-    display: flex;
-  }
-  .navlist a{
-    color: white;
-    margin-left: 60px;
-    font-size: 15px;
-    font-weight: 600;
-    border-bottom: 2px solid transparent;
-    transition: all .55s ease;
-  }
-  .navlist a:hover{
-    border-bottom: 2px solid white;
-  }
-  #menu-icon{
-    color: white;
-    font-size: 35px;
-    z-index: 10001;
-    cursor: pointer;
-    display: none;
-  }
+
+
+body{
+  background: #133917;
+}
+/* center items */
+h3{
+  text-align: center;
+}
+.trackContainer{
+  position: relative;
+  flex-direction: column;
+      /* margin: 85px auto 0; */
+    background: var(--light);
+   width: 700px;
+   padding: 10px;
+   border-radius: 4px;
+  height:350px;
+  box-sizing: border-box;
+  margin-block: 10px;
+  border:10px solid var(--grey);
+
+  margin: 0 auto; /* Center the form horizontally */
+  text-align: left; /* Align text to the left */
  
+}
+
+input[type=text]{
+  display: inline-flexbox;
+  width: 60%;
+  padding: 25px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: .5 solid;
+  margin: 10px;
+  width: 100%; 
+  padding: 5px; 
+  margin-bottom: 10px; 
+
+}
+input[type=submit]{
+width: 100%;
+padding: 10px;
+margin:10px 0;
+border-radius: 4px;
+border: none;
+background:#dc9127
+}
+
+textarea#Description {
+  width: 100%; /* Set textarea width to 100% */
+  padding: 5px; /* Add some padding for better appearance */
+  margin-bottom: 10px; /* Add spacing between textarea and other inputs */
+  rows: 3; /* Set the height to 3 lines (adjust as needed) */
+}
+
+/* Style the submit button */
+button[type="submit"] {
+  background-color: #007BFF; /* Add your desired button background color */
+  color: white; /* Text color */
+  padding: 10px 20px; /* Add padding to the button */
+  border: none; /* Remove border */
+  cursor: pointer; /* Add pointer cursor on hover */
+}
+ 
+label {
+  display: block; /* Display labels as block elements (one below the other) */
+  margin-bottom: 5px; /* Add some spacing between labels and inputs */
+  font-weight: bold; /* Make labels bold (adjust as needed) */
+}
+ 
+.logo{
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+}
+.navlist{
+  display: flex;
+}
+.navlist a{
+  color: white;
+  margin-left: 60px;
+  font-size: 15px;
+  font-weight: 600;
+  border-bottom: 2px solid transparent;
+  transition: all .55s ease;
+}
+.navlist a:hover{
+  border-bottom: 2px solid white;
+}
+#menu-icon{
+  color: white;
+  font-size: 35px;
+  z-index: 10001;
+  cursor: pointer;
+  display: none;
+}
+
+.trackContainer {
+  text-align: center;
+}
+hr {
+  border-top: 1px solid white;
+  margin: 20px 0;
+}
+#displayInfo {
+  background-color: var(--ltgreen);
+  color: white;
+  display: none;
+  padding: 20px;
+  width: 700px; /* Set width to 700px */
+  margin: 0 auto; /* Center horizontally */
+  border-top: 5px solid black; /* Add top border */
+  border-bottom: 5px solid black; /* Add bottom border */
+  background-color: var(--grey);
+  margin-bottom: 20px;
+}

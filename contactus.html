@@ -21,34 +21,35 @@
             <div class="columns is-centered"> <!-- Center the columns -->
                 <div class="column is-half">
                     <h1 class="title custom-title has-text-centered has-text-white">Contact Us</h1> <!-- Center the title text -->
-                    <form class="custom-form"> <!-- Apply the custom-form class to set the background color -->
+                    <form class="custom-form" id="contactForm"> <!-- Apply the custom-form class to set the background color -->
                         <div class="field">
                             <label class="label">Name</label>
                             <div class="control">
-                                <input class="input" type="text" placeholder="Your Name">
+                                <input class="input" type="text" placeholder="Your Name" id="nameInput">
                             </div>
                         </div>
 
                         <div class="field">
                             <label class="label">Email</label>
                             <div class="control">
-                                <input class="input" type="email" placeholder="Your Email">
+                                <input class="input" type="email" placeholder="Your Email"  id="emailInput">
                             </div>
                         </div>
 
                         <div class="field">
                             <label class="label">Description of Your Issue</label>
                             <div class="control">
-                                <textarea class="textarea" placeholder="Describe your issue here"></textarea>
+                                <textarea class="textarea" placeholder="Describe your issue here" id="descriptionInput"></textarea>
                             </div>
                         </div>
 
                         <div class="field">
                             <div class="control">
-                                <button class="button is-primary" type="submit">Submit</button>
+                                <button class="button is-primary" type="submit" id="submitButton">Submit</button>
                             </div>
                         </div>
                     </form>
+                    <p id="confirmationMessage" class="has-text-centered has-text-success has-text-black is-hidden">Sent! We will respond within 1 year of your request</p>
                 </div>
             </div>
         </div>
@@ -59,7 +60,7 @@
     </main>
 
     <div id="footerContainer"></div>
-
+    <script src="./assets/js/contact.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
 
