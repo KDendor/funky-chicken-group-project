@@ -7078,6 +7078,12 @@ label.panel-block:hover {
   padding: 0.75rem;
 }
 
+footer .column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .columns.is-mobile > .column.is-narrow {
   flex: none;
   width: unset;
