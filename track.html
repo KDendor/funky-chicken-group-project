@@ -22,12 +22,31 @@
   family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   
 </head>
+<div id="headerContainer"></div>
 <body>
-  <div id="headerContainer"></div>
-    <main>
-    <!--BOdy Code-->
+<main>
+  <section> 
+    <div class="trackContainer">
+      <h3>Track Your Plants</h3>
+      <form id="plantForm">
+        <label for="PlantType">Plant Type</label>
+        <input type="text" id="PlantType" placeholder="What is your plant type?">
+        <label for="Description">Add your Notes</label>
+        <textarea type="text" id="Description" rows="3" placeholder="add your notes here"></textarea>
+        <label for="file-upload-input">Upload</label>
+        <input class="file-upload-input" type="file" onchange="readURL(this)" accept="img"> 
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </section>
   </main>
+  <div id="displayInfo" style="display: none;">
+    <h4 id="plantTypeHeader"></h4>
+    <p id="descriptionText"></p>
+    <img id="uploadedImage" src="" alt="Uploaded Image">
+  </div>
   <div id="footerContainer"></div>
+  <script src="./assets/js/track.js"></script>
   <script src="./assets/js/script.js"></script>
 </body>
 </html>

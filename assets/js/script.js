@@ -22,24 +22,6 @@ document.addEventListener('DOMContentLoaded', () => {
     loadAndInsertHTML('header.html', 'headerContainer');
     loadAndInsertHTML('footer.html', 'footerContainer');
 
-    document.addEventListener('DOMContentLoaded', () => {
-        const contactForm = document.getElementById("contactForm");
-        const nameInput = document.getElementById("nameInput");
-        const emailInput = document.getElementById("emailInput");
-        const descriptionInput = document.getElementById("descriptionInput");
-        const submit = document.getElementById("submitButton");
-        const confirmationMessage = document.getElementById("confirmationMessage");
-    
-        contactForm.addEventListener("submit", (e) => {
-            e.preventDefault();
-            nameInput.value = "";
-            emailInput.value = "";
-            descriptionInput.value = "";
-            confirmationMessage.classList.remove("is-hidden");
-        });
-    });
-    
-
     // Select the .banner element
     const banner = document.querySelector('#banner');
 
