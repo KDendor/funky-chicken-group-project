@@ -1,6 +1,6 @@
 # Sprout Web Application
 
-Welcome to Sprout Sage, a web application designed for plant owners to find information related to their plants and care for them better.
+Welcome to Sprout, a web application designed for plant owners to find information related to their plants and care for them better.
 
 ## Table of Contents
 
@@ -14,7 +14,7 @@ Welcome to Sprout Sage, a web application designed for plant owners to find info
 
 ## Introduction
 
-Sprout Sage is a user-friendly web application that empowers plant owners with the knowledge and tools they need to care for their plants effectively. Whether you're looking to identify a plant, plan its care routine, track its progress, set reminders, or learn more about plant care, Sprout has you covered.
+Sprout is a user-friendly web application that empowers plant owners with the knowledge and tools they need to care for their plants effectively. Whether you're looking to identify a plant, plan its care routine, track its progress, set reminders, or learn more about plant care, Sprout has you covered.
 
 ## Technologies
 
@@ -32,7 +32,6 @@ External Libraries:
 ## Features
 
 - **Identify:** Use the plant identification feature to learn more about your plants.
-- **Plan:** Plan customized care routines for your plants.
 - **Track:** Track your plant's growth and care history.
 - **Reminder:** Set reminders for watering, fertilizing, and more.
 - **About Us:** Get to know the creators of the Sprout Sage application.
