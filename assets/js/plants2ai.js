@@ -6,7 +6,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const plantImageSrc = document.getElementById("plantImageSrc");
     const wateringContent = document.getElementById("watering");
     const hardinessZonesContent = document.getElementById("hardinessZones");
-  
+    
+    document.getElementById('searchForm').addEventListener('submit', function(event) {
+        event.preventDefault(); 
+        document.getElementById('plantSearchButton').click();
+    });
+    
     searchButton.addEventListener("click", async () => {
       try {
         const plantName = plantNameInput.value;
