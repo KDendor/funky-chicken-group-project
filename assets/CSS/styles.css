@@ -368,3 +368,40 @@ a:hover .icon {
   color: #007BFF;
   font-weight: bold;
 }
+
+    /* Aboutus CSS styles */
+    .asColumns {
+      justify-content: center; /* Center the columns horizontally */
+      margin-left: -10px; /* Negative margin to create spacing between columns */
+      margin-right: -10px; /* Negative margin to create spacing between columns */
+  }
+
+  .asColumn {
+      flex-basis: 16.666%; /* Set the column width to 16.666% (6 columns per row) */
+      padding-left: 10px; /* Add spacing between columns */
+      padding-right: 0px; /* Add spacing between columns */
+      margin-bottom: 20px; /* Add spacing between rows */
+  }
+
+  .asCard {
+      max-width: 100%; /* Allow cards to be as wide as their container */
+      text-align: center; /* Center the card content */
+      background-color: var(--light);
+      border-radius: var(--border-radius);
+      border: 5px solid var(--grey);
+      height: 400px;
+      padding: 10px 0px 10px 0px;
+  }
+
+  .asCard:hover {
+      background-color: var(--grey);
+      box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.5)
+  }
+
+  .asCard-content {
+      padding: 1rem; /* Add padding to the card content for spacing */
+  }
+
+  .asCard-img-top {
+      max-width: 100%; /* Ensure images are not wider than the card */
+  }
