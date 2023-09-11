@@ -223,12 +223,24 @@ textarea {
     position: relative;
 }
 
+.custom-form {
+  background-color: var(--light); /* Set the background color of the form */
+  padding: 20px; /* Add padding for better visual appearance */
+  border-radius: var(--border-radius);
+}
+
 .todoLists .list input{
   cursor: pointer;
 }
 
 .task{
   padding: 0px 20px;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--dark);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .uil-trash{
@@ -265,10 +277,11 @@ a:hover .icon {
 .fa {
   padding: 20px;
   font-size: 30px;
-  width: 50px;
+  width: 60px;
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;
+  border-radius: 6%;
 }
 
 .fa:hover {
@@ -292,6 +305,11 @@ a:hover .icon {
 
 .fa-linkedin {
   background: #007bb5;
+  color: white;
+}
+
+.fa-github {
+  background-color: #070617;
   color: white;
 }
 
@@ -326,4 +344,27 @@ a:hover .icon {
   background-color: var(--light);
   border-radius: var(--border-radius);
   color: var(--dark);
+}
+
+.product-card {
+  border: 1px solid var(--grey);
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: var(--light);
+}
+
+.product-image {
+  max-width: 100%;
+  height: auto;
+  height: 150px; /* Set the maximum height for the images */
+}
+
+.product-title {
+  font-weight: bold;
+}
+
+.product-price {
+  color: #007BFF;
+  font-weight: bold;
 }
