@@ -7082,6 +7082,19 @@ footer .column {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center; /* Center-align the text within each column */
+}
+
+.social-icons {
+  display: flex;
+  flex-wrap: wrap; /* Allow the icons to wrap to the next line */
+  justify-content: center; /* Center the icons horizontally */
+}
+
+.social-icons a {
+  font-size: 25px; /* Adjust the icon size as needed */
+  margin: 5px; /* Add spacing between the icons */
+  align-items: center; /* Center the icon vertically within its box */
 }
 
 .columns.is-mobile > .column.is-narrow {
